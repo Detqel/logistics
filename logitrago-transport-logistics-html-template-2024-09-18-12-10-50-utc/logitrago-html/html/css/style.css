@@ -131,6 +131,7 @@ a {
   color: #0b2f44;
   outline: 0px none;
   text-decoration: none;
+  font-size: 20px;
 }
 
 a:hover, a:focus {
@@ -6866,7 +6867,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 /*Estimation Section*/
-@media (max-width: 991px) {
+@media (max-width: 901px) {
   .tw-estimation-area {
     padding-bottom: 0px !important;
   }
@@ -6877,7 +6878,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .tw-est-section-block {
-  height: 700px;
+  height: 800px;
   position: relative;
   z-index: 1;
   border: 15px solid transparent;
@@ -6923,7 +6924,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .tw-est-section-block:hover {
-  border: 15px solid rgba(255, 255, 255, 0.5);
+  border: 15px solid rgba(58, 55, 55, 0.5);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -10316,11 +10317,11 @@ select {
 
 /*Estimation section 3*/
 .tw-est-section-block3 {
-  height: 550px;
+  height: 750px;
   position: relative;
   z-index: 1;
   border: 15px solid transparent;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(7, 7, 7, 0.4);
   text-align: center;
   transition: 0.5s all ease;
 }
