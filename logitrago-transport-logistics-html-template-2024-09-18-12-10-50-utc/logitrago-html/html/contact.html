@@ -233,44 +233,41 @@
 
                                 <div class="col-lg-8 col-md-12">
                                     <div class="contact-form-outer">
-                                        <form  class="cons-contact-form" method="post" action="form-handler2.php">
-                                
+                                        <form class="cons-contact-form" onsubmit="sendToWhatsApp(event)">
                                             <div class="row">
-
                                                 <div class="col-lg-6 col-md-6">
                                                     <div class="form-group mb-3">
-                                                        <input name="username" type="text" required class="form-control" placeholder="Name">
+                                                        <input id="username" type="text" required class="form-control" placeholder="Name">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="col-lg-6 col-md-12">
                                                     <div class="form-group mb-3">
-                                                    <input name="email" type="text" class="form-control" required placeholder="Email">
+                                                        <input id="email" type="text" class="form-control" required placeholder="Email">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="col-lg-6 col-md-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="phone" type="text" class="form-control" required placeholder="Phone">
+                                                        <input id="phone" type="text" class="form-control" required placeholder="Phone">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="col-lg-6 col-md-12">
                                                     <div class="form-group mb-3">
-                                                        <input name="subject" type="text" class="form-control" required placeholder="Subject">
+                                                        <input id="subject" type="text" class="form-control" required placeholder="Subject">
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="col-lg-12">
                                                     <div class="form-group mb-3">
-                                                    <textarea name="message" class="form-control" rows="3" placeholder="Message"></textarea>
+                                                        <textarea id="message" class="form-control" rows="3" placeholder="Message"></textarea>
                                                     </div>
                                                 </div>
                                                 
                                                 <div class="col-md-12">
-                                                    <button type="submit" class="btn-half site-button"><span>Submit Now</span><em></em></button>
+                                                    <button type="button"  onclick="sendToWhatsApp(event)" class="btn-half site-button"><span>Submit Now</span><em></em></button>
                                                 </div>
-                                                
                                             </div>
                                         </form>
                                     </div>
@@ -328,9 +325,7 @@
                 
                     <div class="ftr-nw-ltr-inner site-bg-primary">
                         <div class="container">
-                            <div class="ftr-nw-img">
-                                <img src="images/driverthumbs.jpg" alt="">
-                            </div>
+                            
                             <div class="ftr-nw-content">
                                 <div class="ftr-nw-title">Subscribe for offers and news</div>
                                 <div class="ftr-nw-form">
@@ -455,8 +450,30 @@
 <script  src="js/swiper-bundle.min.js"></script><!-- Swiper js -->
 <script  src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
 <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-
-
+<script>
+    function sendToWhatsApp(event) {
+      event.preventDefault();
+  
+      const name = document.getElementById("username").value;
+      const email = document.getElementById("email").value;
+      const phone = document.getElementById("phone").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+  
+      const whatsappNumber = "917010165434"; // Replace with your WhatsApp number (without +)
+  
+      const fullMessage = `New Contact Form Submission:\n\n` +
+                          `Name: ${name}\n` +
+                          `Email: ${email}\n` +
+                          `Phone: ${phone}\n` +
+                          `Subject: ${subject}\n` +
+                          `Message: ${message}`;
+  
+      const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(fullMessage)}`;
+      window.open(whatsappURL, "_blank");
+    }
+  </script>
+  
 
 
 
