@@ -3828,9 +3828,11 @@ ol.comment-list {
 /*Services 3*/
 .services-gallery-style3{
 	margin-bottom: 30px;
+	
 	.service-box-style3 {
 		background-color: $clr-white;
 		padding: 30px;
+        border-radius: 16px;
 		margin: 20px;
 		position: relative;
 		z-index: 1;
@@ -3840,6 +3842,7 @@ ol.comment-list {
 			left: -20px;
 			top: -20px;
 			bottom: -20px;
+			border-radius: 16px;
 			right: -20px;
 			border:20px solid #f1f1f1;
 			z-index: -1;
@@ -3852,6 +3855,7 @@ ol.comment-list {
 			top: 0px;
 			width: 10px;
 			height: 76px;
+			border-radius: 16px;
 			background-color: $clr-primary;
 			transition: $transition;
 		}
