@@ -42,7 +42,15 @@
     <link rel="stylesheet" href="css/lc_lightbox.css" />     
     <!-- Price Range Slider -->
     <link rel="stylesheet" href="css/bootstrap-slider.min.css" />
-    
+    <div id="header-placeholder"></div>
+
+<script>
+  fetch('newpages/header.html')
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById('header-placeholder').innerHTML = data;
+    });
+</script>
 
 </head>
 
