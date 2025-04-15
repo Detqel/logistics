@@ -60,6 +60,7 @@ This files [Table of contents] are outlined below
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 /*===GENERAL===*/
+
 .site-text-primary {
   color: #ff8a00;
 }
@@ -109,7 +110,7 @@ This files [Table of contents] are outlined below
 }
 
 .site-bg-sky {
-  background-color: #1e8fd0;
+  background-color:0b2f44;
 }
 
 .site-bg-sky-blue-light {
@@ -3197,7 +3198,7 @@ ol li {
 }
 
 .header-style-3 .is-fixed.color-fill .main-bar {
-  background-color: #1e8fd0;
+  background-color: #0b2f44;
 }
 
 .header-style-3 .is-fixed.color-fill .header-nav .nav > li {
@@ -7841,6 +7842,10 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .services-gallery-style3 .service-box-style3:after {
   content: '';
   position: absolute;
+  border-radius: 16px; /* You can change the radius value */
+  overflow: hidden; /* Ensures content respects the border radius */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: adds soft shadow */
+ 
   left: -20px;
   top: -20px;
   bottom: -20px;
@@ -10371,7 +10376,7 @@ select {
 }
 
 .tw-est-section-block3 .tw-est-section-block-content .tw-title {
-  color: #fff;
+  color: #ff
 }
 
 .tw-est-section-block3:hover {
