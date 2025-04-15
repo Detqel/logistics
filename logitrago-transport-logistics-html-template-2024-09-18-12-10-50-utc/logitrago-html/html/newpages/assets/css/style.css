@@ -1557,7 +1557,7 @@ animation: spinner 1s infinite linear;
   padding-right: 15px;
 }
 
-.main-menu .main-menu__list>li.dropdown>a:after {
+.main-menu .main-menu__list>li.dropdown> {
   position: absolute;
   top: 56%;
   right: 0;
