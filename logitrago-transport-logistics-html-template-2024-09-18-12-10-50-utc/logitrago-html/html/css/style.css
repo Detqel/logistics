@@ -7922,7 +7922,8 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .services-gallery-style3 .service-box-style3:hover:after {
-  border: 20px solid #ff8a00;
+  border: 20px solid #00ccff;
+  background: linear-gradient(45deg, #9ee7fa, #ffffff);
 }
 
 .services-gallery-style3 .service-box-style3:hover:before {
@@ -11232,3 +11233,8 @@ select {
   }
 }
 /*# sourceMappingURL=style.css.map */
+/* carousel */
+
+
+
+  
