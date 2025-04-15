@@ -11235,6 +11235,15 @@ select {
 /*# sourceMappingURL=style.css.map */
 /* carousel */
 
+.outline1 {
+  transition: all 0.3s ease;
+}
+
+.outline1:hover {
+  outline: 2px solid #00ccff; /* or any color you want */
+  outline-offset: 4px; /* adds space between element and outline */
+  border-radius: 8px; /* optional for rounded effect */
+}
 
 
   
