@@ -11263,7 +11263,7 @@ select {
 .header-slider .img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 68%;
 }
 
 .header-slider .img img {
@@ -11313,8 +11313,8 @@ select {
   border: 2px solid rgb(142,197,252);
   width: 13px;
   height: 13px;
-  margin: 0 3px;
-  border-radius: 100%;
+  margin:  3px;
+  border-radius: 0px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
