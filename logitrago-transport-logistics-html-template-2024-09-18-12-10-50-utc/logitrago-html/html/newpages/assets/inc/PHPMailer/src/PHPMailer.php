@@ -152,7 +152,7 @@ class PHPMailer
      * Only supported in simple alt or alt_inline message types
      * To generate iCal event structures, use classes like EasyPeasyICS or iCalcreator.
      *
-     * @see http://sprain.ch/blog/downloads/php-class-easypeasyics-create-ical-files-with-php/
+     * @see http://sprain.ch/Gallery/downloads/php-class-easypeasyics-create-ical-files-with-php/
      * @see http://kigkonsult.se/iCalcreator/
      *
      * @var string
@@ -2330,7 +2330,7 @@ class PHPMailer
                     //Translation file lines look like this:
                     //$PHPMAILER_LANG['authenticate'] = 'SMTP-Fehler: Authentifizierung fehlgeschlagen.';
                     //These files are parsed as text and not PHP so as to avoid the possibility of code injection
-                    //See https://blog.stevenlevithan.com/archives/match-quoted-string
+                    //See https://Gallery.stevenlevithan.com/archives/match-quoted-string
                     $matches = [];
                     if (
                         preg_match(

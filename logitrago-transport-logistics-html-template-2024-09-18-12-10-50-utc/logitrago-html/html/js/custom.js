@@ -246,7 +246,7 @@ function slider_home3(){
  	function lightbox_popup(){
         lc_lightbox('.elem', {
             wrap_class: 'lcl_fade_oc',
-            gallery : true,	
+            Gallery : true,	
             thumb_attr: 'data-lcl-thumb', 
             
             skin: 'minimal',
@@ -485,8 +485,8 @@ function slider_home3(){
 	}	
 	
 	//  Service Gallery Carousel function by = owl.carousel.js ========================== //
-	function services_gallery_carousel(){
-		jQuery('.services-gallery-one').owlCarousel({
+	function services_Gallery_carousel(){
+		jQuery('.services-Gallery-one').owlCarousel({
 			loop:true,
 			nav:true,
 			dots: false,				
@@ -514,8 +514,8 @@ function slider_home3(){
 	}
 
 		//  Service Gallery Carousel function by = owl.carousel.js ========================== //
-		function services_gallery_carousel4(){
-			jQuery('.services-gallery-four').owlCarousel({
+		function services_Gallery_carousel4(){
+			jQuery('.services-Gallery-four').owlCarousel({
 				loop:true,
 				nav:true,
 				dots: false,				
@@ -716,9 +716,9 @@ function slider_home3(){
 		//  Client logo Carousel function by = owl.carousel.js ========================== //
 	    home_client_carousel_3(),
 		//  Service Gallery Carousel function by = owl.carousel.js ========================== //
-		services_gallery_carousel(),
+		services_Gallery_carousel(),
 		//  Service Gallery Carousel function by = owl.carousel.js ========================== //
-		services_gallery_carousel4(),
+		services_Gallery_carousel4(),
 		//  Counter Section function by = counterup.min.js ========================== //
 		counter_section(),
 		//  Booking Form Section function by = custom.js

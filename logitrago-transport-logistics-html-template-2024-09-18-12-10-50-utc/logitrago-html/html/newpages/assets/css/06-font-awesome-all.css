@@ -740,13 +740,13 @@ readers do not read off random characters that represent icons */
 .fa-blind:before {
   content: "\f29d"; }
 
-.fa-blog:before {
+.fa-Gallery:before {
   content: "\f781"; }
 
-.fa-blogger:before {
+.fa-Galleryger:before {
   content: "\f37c"; }
 
-.fa-blogger-b:before {
+.fa-Galleryger-b:before {
   content: "\f37d"; }
 
 .fa-bluetooth:before {

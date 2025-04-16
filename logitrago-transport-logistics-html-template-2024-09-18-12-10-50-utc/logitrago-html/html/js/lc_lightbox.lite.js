@@ -104,8 +104,8 @@
 	var lcl = function(obj, settings) {
 
 		var lcl_settings = $.extend({
-			gallery			: true, // whether to display a single element or compose a gallery
-			gallery_hook	: 'rel', // attribute grouping elements - use false to create a gallery with all fetched elements 
+			Gallery			: true, // whether to display a single element or compose a Gallery
+			Gallery_hook	: 'rel', // attribute grouping elements - use false to create a Gallery with all fetched elements 
 			live_elements	: true, // if a selector is found, set true to handle automatically DOM changes
 			preload_all		: false, // whether to preload all images on document ready
 			global_type		: 'image',
@@ -194,7 +194,7 @@
 			elems_count		: (typeof(obj) != 'string' && typeof(obj[0].childNodes) == 'undefined') ? obj.length : $(obj).length, // elements count at the moment of lb initialization
 			elems_selector	: (typeof(obj) == 'string') ? obj : false, // elements selector - used for dynamic elements fetching
 			elem_index 		: false, // current element index
-			gallery_hook_val: false, // gallery hook value - to discard other ones
+			Gallery_hook_val: false, // Gallery hook value - to discard other ones
 			preload_all_used: false, // flag to know when complete preload on document's ready has been triggered
 			img_sizes_cache : [], // store image sizes after their preload - index is images index
 
@@ -292,8 +292,8 @@
 				var src  = $e.attr( o.src_attr );
 				var hash = get_hash(src);
 				
-				// check against gallery hook
-				if(lcl_ai_vars.gallery_hook_val && $e.attr(o.gallery_hook) != lcl_ai_vars.gallery_hook_val) {
+				// check against Gallery hook
+				if(lcl_ai_vars.Gallery_hook_val && $e.attr(o.Gallery_hook) != lcl_ai_vars.Gallery_hook_val) {
 					return true;
 				}
 				
@@ -379,7 +379,7 @@
 		
 		/* smart images preload */
 		var close_img_preload = function() {
-			if(lcl_ai_vars.elems.length < 2 || !lcl_ai_opts.gallery) {return false;}
+			if(lcl_ai_vars.elems.length < 2 || !lcl_ai_opts.Gallery) {return false;}
 
 			if(lcl_ai_vars.elem_index > 0) { // prev
 
@@ -500,9 +500,9 @@
 
 				// can fetch elements in real-time? save selector
 				if(o.live_elements && vars.elems_selector) {
-					var consider_group = ($clicked_obj && o.gallery && o.gallery_hook && typeof($(obj[0]).attr(o.gallery_hook)) != 'undefined') ? true : false;
+					var consider_group = ($clicked_obj && o.Gallery && o.Gallery_hook && typeof($(obj[0]).attr(o.Gallery_hook)) != 'undefined') ? true : false;
 					
-					var sel = (consider_group) ? vars.elems_selector +'['+ o.gallery_hook +'='+ $clicked_obj.attr( o.gallery_hook ) +']' : vars.elems_selector;
+					var sel = (consider_group) ? vars.elems_selector +'['+ o.Gallery_hook +'='+ $clicked_obj.attr( o.Gallery_hook ) +']' : vars.elems_selector;
 					$subj = $(sel);
 				}
 				
@@ -575,8 +575,8 @@
 			}
 			
 			
-			// set gallery hook value
-			v.gallery_hook_val = ($co && o.gallery && o.gallery_hook && typeof($co.attr(o.gallery_hook)) != 'undefined') ? $co.attr(o.gallery_hook) : false;
+			// set Gallery hook value
+			v.Gallery_hook_val = ($co && o.Gallery && o.Gallery_hook && typeof($co.attr(o.Gallery_hook)) != 'undefined') ? $co.attr(o.Gallery_hook) : false;
 			
 			// parse elements
 			if(!elems_parsing(inst_obj, $clicked_obj)) {
@@ -701,7 +701,7 @@
 			if(!o.txt_toggle_cmd) 	{$('.lcl_txt_toggle').remove();}
 			if(!o.socials) 			{$('.lcl_socials').remove();}
 			if(!o.download) 		{$('.lcl_download').remove();}
-			if(!o.counter || v.elems.length < 2 || !o.gallery) {$('.lcl_counter').remove();}
+			if(!o.counter || v.elems.length < 2 || !o.Gallery) {$('.lcl_counter').remove();}
 			
 			// fullscreen
 			v.force_fullscreen = false;
@@ -714,7 +714,7 @@
 			}
 				
 			// prev/next buttons
-			if(v.elems.length < 2 || !o.gallery) {
+			if(v.elems.length < 2 || !o.Gallery) {
 				$('.lcl_prev, .lcl_play, .lcl_next').remove();
 			} else {
 				if(o.nav_btn_pos == 'middle') {
@@ -723,7 +723,7 @@
 			}
 			
 			// thumbs nav
-			if(!o.thumbs_nav || lcl_ai_vars.elems.length < 2 || !o.gallery) {
+			if(!o.thumbs_nav || lcl_ai_vars.elems.length < 2 || !o.Gallery) {
 				$('#lcl_thumbs_nav, .lcl_thumbs_toggle').remove();
 			} 
 			else {
@@ -1453,7 +1453,7 @@
 			var v 			= lcl_ai_vars; 
 			var carousel	= lcl_ai_opts.carousel;
 			
-			if(lcl_is_active || v.elems.length < 2 || !lcl_ai_opts.gallery || $('.lcl_switching_elem').length) {return false;}
+			if(lcl_is_active || v.elems.length < 2 || !lcl_ai_opts.Gallery || $('.lcl_switching_elem').length) {return false;}
 
 			// find and sanitize new index
 			if(new_el == 'next'){
