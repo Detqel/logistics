@@ -566,7 +566,7 @@
                 type: "image",
                 closeOnContentClick: true,
                 closeBtnInside: false,
-                gallery: {
+                Gallery: {
                     enabled: true,
                 },
             });

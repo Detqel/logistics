@@ -25,17 +25,17 @@ This files [Table of contents] are outlined below
 ** - Breadcrumb
 ** - Contact Form
 ** - Pagination Style
-** - Blog Side Bar
+** - Gallery Side Bar
 ** - comment form
 ** - Comment list
-** - Single Blog Post
+** - Single Gallery Post
 ** - Single Post Navigation
 ** - Loading
 ** - Loading Animation Start
 ** - Description list
 ** - Section Overlay
 ** - What We do
-** - Blog post 4
+** - Gallery post 4
 ** - All Services
 ** - services-box-one
 ** - Hilite Text
@@ -1066,7 +1066,7 @@ button{
 	}
 }
 
-/*Blog Side Bar*/
+/*Gallery Side Bar*/
 .side-bar{
 	.widget{
 		&:last-child{
@@ -1437,9 +1437,9 @@ ol.comment-list {
 	}
 }
 
-/*Single Blog Post*/
-.blog-post-single-outer{
-	.blog-post-single{
+/*Single Gallery Post*/
+.Gallery-post-single-outer{
+	.Gallery-post-single{
 		.wt-post-meta-list{
 			margin-bottom: 5px;
 			width: 100%;
@@ -1912,8 +1912,8 @@ ol.comment-list {
 	}
 }
 
-/*Blog post 4*/
-.blog-post-4-outer{
+/*Gallery post 4*/
+.Gallery-post-4-outer{
 	.wt-post-media{
 		img{
 			width: 100%;
@@ -1996,7 +1996,7 @@ ol.comment-list {
 		}
 	}
 }
-.blog-no-image{
+.Gallery-no-image{
 	background-color: $clr-primary;
 	padding: 30px;
 	color: $clr-white;
@@ -2253,11 +2253,11 @@ ol.comment-list {
 }
 
 /*services-box-one*/
-.tw-service-gallery-style1-area{
+.tw-service-Gallery-style1-area{
 	position: relative;
 }
 
-.services-gallery-block-outer{
+.services-Gallery-block-outer{
 	@include breakpoint_1440{
 		max-width: calc(100% - 170px);
 	}
@@ -2333,7 +2333,7 @@ ol.comment-list {
 	}
 }
 
-.services-gallery-style1{
+.services-Gallery-style1{
 	margin-bottom: 30px;
 	@include breakpoint_1200{
 		padding-left:0px;
@@ -2349,7 +2349,7 @@ ol.comment-list {
 
 
 
-	.services-gallery-one.owl-btn-bottom-left {
+	.services-Gallery-one.owl-btn-bottom-left {
 		.owl-nav {
 			.owl-next {
 				right: -1px;
@@ -2360,7 +2360,7 @@ ol.comment-list {
 			}
 		}
 	}
-	.services-gallery-one{
+	.services-Gallery-one{
 		&.owl-btn-bottom-left{
 			.owl-nav {
 				opacity: 1;
@@ -3826,7 +3826,7 @@ ol.comment-list {
 }
 
 /*Services 3*/
-.services-gallery-style3{
+.services-Gallery-style3{
 	margin-bottom: 30px;
 	
 	.service-box-style3 {
@@ -3923,7 +3923,7 @@ ol.comment-list {
 	
 }
 
-.tw-sidebar-gallery{
+.tw-sidebar-Gallery{
 	margin-top: -20px;
 	ul{
 		list-style: none;
@@ -5982,7 +5982,7 @@ select {
 /*Services 3*/
 
 
-.services-gallery-style4{
+.services-Gallery-style4{
 	margin-bottom: 30px;
 	@include breakpoint_1200{
 		padding-left:0px;
@@ -5998,7 +5998,7 @@ select {
 
 
 
-	.services-gallery-one.owl-btn-bottom-left {
+	.services-Gallery-one.owl-btn-bottom-left {
 		.owl-nav {
 			.owl-next {
 				right: -1px;
@@ -6009,7 +6009,7 @@ select {
 			}
 		}
 	}
-	.services-gallery-one{
+	.services-Gallery-one{
 		&.owl-btn-bottom-left{
 			.owl-nav {
 				opacity: 1;

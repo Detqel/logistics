@@ -80,7 +80,7 @@ class TP_flickr {
 	 * @param    string    $user_url URL of the Gallery
 	 */
 	public function get_user_from_url($user_url){
-		//gallery params
+		//Gallery params
 		$user_params = $this->api_param_defaults + array(
 			'method'  => 'flickr.urls.lookupUser',
   			'url' => $user_url,
@@ -89,7 +89,7 @@ class TP_flickr {
 		//set User Url
 		$this->flickr_url = $user_url;
 
-		//get gallery info
+		//get Gallery info
 		$user_info = $this->call_flickr_api($user_params);
 		return $user_info->user->id;
 	}
@@ -101,7 +101,7 @@ class TP_flickr {
 	 * @param    string    $group_url URL of the Gallery
 	 */
 	public function get_group_from_url($group_url){
-		//gallery params
+		//Gallery params
 		$group_params = $this->api_param_defaults + array(
 			'method'  => 'flickr.urls.lookupGroup',
   			'url' => $group_url,
@@ -110,7 +110,7 @@ class TP_flickr {
 		//set User Url
 		$this->flickr_url = $group_url;
 
-		//get gallery info
+		//get Gallery info
 		$group_info = $this->call_flickr_api($group_params);
 		return $group_info->group->id;
 	}
@@ -206,41 +206,41 @@ class TP_flickr {
 	 * Get Gallery ID from its URL
 	 *
 	 * @since    1.0.0
-	 * @param    string    $gallery_url URL of the Gallery
+	 * @param    string    $Gallery_url URL of the Gallery
 	 * @param    int       $item_count 	number of photos to pull
 	 */
-	public function get_gallery_from_url($gallery_url){
-		//gallery params
-		$gallery_params = $this->api_param_defaults + array(
+	public function get_Gallery_from_url($Gallery_url){
+		//Gallery params
+		$Gallery_params = $this->api_param_defaults + array(
 			'method'  => 'flickr.urls.lookupGallery',
-  			'url' => $gallery_url,
+  			'url' => $Gallery_url,
 		);
 		
-		//get gallery info
-		$gallery_info = $this->call_flickr_api($gallery_params);
-		return $gallery_info->gallery->id;
+		//get Gallery info
+		$Gallery_info = $this->call_flickr_api($Gallery_params);
+		return $Gallery_info->Gallery->id;
 	}
 
 	/**
 	 * Get Gallery Photos
 	 *
 	 * @since    1.0.0
-	 * @param    string    $gallery_id 	flicker Gallery id (not name)
+	 * @param    string    $Gallery_id 	flicker Gallery id (not name)
 	 * @param    int       $item_count 	number of photos to pull
 	 */
-	public function get_gallery_photos($gallery_id,$item_count=10){
-		//gallery photos params
-		$gallery_photo_params = $this->api_param_defaults + array(
+	public function get_Gallery_photos($Gallery_id,$item_count=10){
+		//Gallery photos params
+		$Gallery_photo_params = $this->api_param_defaults + array(
 			'method'  => 'flickr.galleries.getPhotos',
-  			'gallery_id' => $gallery_id,
+  			'Gallery_id' => $Gallery_id,
   			'extras'  => 'description, license, date_upload, date_taken, owner_name, icon_server, original_format, last_update, geo, tags, machine_tags, o_dims, views, media, path_alias, url_sq, url_t, url_s, url_q, url_m, url_n, url_z, url_c, url_l, url_o',
   			'per_page'=> $item_count,
   			'page' => 1
 		);
 		
 		//get photo list
-		$gallery_photos_list = $this->call_flickr_api($gallery_photo_params);
-		return $gallery_photos_list->photos->photo;
+		$Gallery_photos_list = $this->call_flickr_api($Gallery_photo_params);
+		return $Gallery_photos_list->photos->photo;
 	}
 
 	/**

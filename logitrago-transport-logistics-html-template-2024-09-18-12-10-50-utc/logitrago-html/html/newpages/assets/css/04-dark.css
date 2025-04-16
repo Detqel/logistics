@@ -12,7 +12,7 @@ body.boxed-wrapper .page-wrapper {
 .cta-one::before,
 .counter-one,
 .team-one__single-content::before,
-.blog-one {
+.Gallery-one {
     background: var(--logistiq-black);
 }
 
@@ -44,7 +44,7 @@ h6,
 .cta-one,
 .team-one,
 .brand-one,
-.blog-one__single-content-inner {
+.Gallery-one__single-content-inner {
     background: #042630;
 }
 
@@ -58,7 +58,7 @@ h6,
 .project-one__overlay-content .text-box h2 a,
 .skill-one__progress-single .title-box p,
 .team-one__single-content .btn-box a,
-.blog-one__single-content-inner h2 a {
+.Gallery-one__single-content-inner h2 a {
     color: var(--logistiq-white);
 }
 
@@ -106,11 +106,11 @@ h6,
 .why-choose-one__form-distance .title p,
 .testimonial-one__img-author .text-box p,
 .counter-one__single-inner .content-box .text-box p,
-.blog-one__single-content-inner .meta-box li .text-box p a {
+.Gallery-one__single-content-inner .meta-box li .text-box p a {
     color: rgba(var(--logistiq-white-rgb), .70);
 }
 
-.blog-one__single-content-inner .meta-box::before {
+.Gallery-one__single-content-inner .meta-box::before {
     background: rgba(var(--logistiq-white-rgb), .10);
 }
 
@@ -189,11 +189,11 @@ h6,
     color: rgba(var(--logistiq-white-rgb), .70);
 }
 
-.blog-one__single-content-inner .btn-box .hover-btn {
+.Gallery-one__single-content-inner .btn-box .hover-btn {
     background-color: var(--logistiq-black);
 }
 
-.blog-one {
+.Gallery-one {
     padding: 120px 0px 90px;
 }
 
