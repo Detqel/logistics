@@ -60,7 +60,6 @@ This files [Table of contents] are outlined below
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sacramento&display=swap");
 /*===GENERAL===*/
-
 .site-text-primary {
   color: #ff8a00;
 }
@@ -110,7 +109,7 @@ This files [Table of contents] are outlined below
 }
 
 .site-bg-sky {
-  background-color:0b2f44;
+  background-color: #1e8fd0;
 }
 
 .site-bg-sky-blue-light {
@@ -132,7 +131,6 @@ a {
   color: #0b2f44;
   outline: 0px none;
   text-decoration: none;
-  font-size: 20px;
 }
 
 a:hover, a:focus {
@@ -3198,7 +3196,7 @@ ol li {
 }
 
 .header-style-3 .is-fixed.color-fill .main-bar {
-  background-color: #0b2f44;
+  background-color: #1e8fd0;
 }
 
 .header-style-3 .is-fixed.color-fill .header-nav .nav > li {
@@ -6868,7 +6866,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 /*Estimation Section*/
-@media (max-width: 901px) {
+@media (max-width: 991px) {
   .tw-estimation-area {
     padding-bottom: 0px !important;
   }
@@ -6879,7 +6877,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .tw-est-section-block {
-  height: 800px;
+  height: 700px;
   position: relative;
   z-index: 1;
   border: 15px solid transparent;
@@ -6925,7 +6923,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .tw-est-section-block:hover {
-  border: 15px solid rgba(58, 55, 55, 0.5);
+  border: 15px solid rgba(255, 255, 255, 0.5);
   background-color: rgba(0, 0, 0, 0.4);
 }
 
@@ -7274,7 +7272,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 .tw-client-logo-wrap {
   padding: 90px 0px 0px 0px;
-  margin-top: -148px;
+  margin-top: 72px;
 }
 
 @media (max-width: 1199px) {
@@ -7842,10 +7840,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 .services-gallery-style3 .service-box-style3:after {
   content: '';
   position: absolute;
-  border-radius: 16px; /* You can change the radius value */
-  overflow: hidden; /* Ensures content respects the border radius */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* optional: adds soft shadow */
- 
   left: -20px;
   top: -20px;
   bottom: -20px;
@@ -7922,8 +7916,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .services-gallery-style3 .service-box-style3:hover:after {
-  border: 20px solid #00ccff;
-  background: linear-gradient(45deg, #9ee7fa, #ffffff);
+  border: 20px solid #ff8a00;
 }
 
 .services-gallery-style3 .service-box-style3:hover:before {
@@ -10323,11 +10316,11 @@ select {
 
 /*Estimation section 3*/
 .tw-est-section-block3 {
-  height: 750px;
+  height: 550px;
   position: relative;
   z-index: 1;
   border: 15px solid transparent;
-  background-color: rgba(7, 7, 7, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   text-align: center;
   transition: 0.5s all ease;
 }
@@ -10377,7 +10370,7 @@ select {
 }
 
 .tw-est-section-block3 .tw-est-section-block-content .tw-title {
-  color: #ff
+  color: #fff;
 }
 
 .tw-est-section-block3:hover {
@@ -11232,116 +11225,4 @@ select {
     line-height: 60px;
   }
 }
-
 /*# sourceMappingURL=style.css.map */
-/* carousel */
-
-.outline1 {
-  transition: all 0.3s ease;
-}
-
-.outline1:hover {
-  outline: 2px solid #00ccff; /* or any color you want */
-  outline-offset: 4px; /* adds space between element and outline */
-  border-radius: 8px; /* optional for rounded effect */
-}
-
-
-.header-slider-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.header-slider {
-  position: relative;
-  width: 100%;
-  height: 950px;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.header-slider .img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.header-slider .img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  clip-path: circle(0% at 0% 100%);
-  transition: all 0.7s ease;
-}
-
-#one:checked ~ .img-1 img,
-#two:checked ~ .img-1 img,
-#three:checked ~ .img-1 img,
-#four:checked ~ .img-1 img,
-#five:checked ~ .img-1 img {
-  clip-path: circle(150% at 0% 100%);
-}
-#two:checked ~ .img-2 img,
-#three:checked ~ .img-2 img,
-#four:checked ~ .img-2 img,
-#five:checked ~ .img-2 img {
-  clip-path: circle(150% at 0% 100%);
-}
-#three:checked ~ .img-3 img,
-#four:checked ~ .img-3 img,
-#five:checked ~ .img-3 img {
-  clip-path: circle(150% at 0% 100%);
-}
-#four:checked ~ .img-4 img,
-#five:checked ~ .img-4 img {
-  clip-path: circle(150% at 0% 100%);
-}
-#five:checked ~ .img-5 img {
-  clip-path: circle(150% at 0% 100%);
-}
-
-.header-slider .sliders {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
-  display: flex;
-}
-
-.header-slider .sliders label {
-  border: 2px solid rgb(142,197,252);
-  width: 13px;
-  height: 13px;
-  margin: 0 3px;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-#one:checked ~ .sliders .one,
-#two:checked ~ .sliders .two,
-#three:checked ~ .sliders .three,
-#four:checked ~ .sliders .four,
-#five:checked ~ .sliders .five {
-  width: 35px;
-  border-radius: 14px;
-  background: rgb(142,197,252);
-}
-
-.header-slider .sliders label:hover {
-  background: rgb(142,197,252);
-}
-
-.header-slider input[type="radio"] {
-  display: none;
-}
-<<<<<<< HEAD
-
-
-
-
-
-
-=======
->>>>>>> 4c4fd760d29004bd453ca9bd73f596e919f01da6
