@@ -43,7 +43,7 @@
 
 body {
   font-family: var(--logistiq-font);
-  font-size: 17px;
+  font-size: 20px;
   line-height: 28px;
   font-weight: 400;
   color: var(--logistiq-gray);
@@ -2953,4 +2953,19 @@ Main Header Three
 
 .stricky-header--style3 .main-header-three__bottom-right {
   display: none;
+}
+.footer-arrow-list li {
+  position: relative;
+  padding-left: 20px;
+  list-style: none;
+}
+
+.footer-arrow-list li::before {
+  content: '➤'; /* You can use →, ➜, ▶, etc. */
+  color: white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+  line-height: 1.6;
 }
