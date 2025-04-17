@@ -43,7 +43,7 @@
 
 body {
   font-family: var(--logistiq-font);
-  font-size: 20px;
+  font-size: 15px;
   line-height: 28px;
   font-weight: 400;
   color: var(--logistiq-gray);
@@ -257,7 +257,7 @@ button {
   position: relative;
   display: inline-block;
   color: var(--logistiq-base);
-  font-size: 20px;
+  font-size: 15px;
   top: 2px;
   margin-left: 15px;
 }
