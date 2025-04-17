@@ -1360,6 +1360,7 @@ animation: spinner 1s infinite linear;
   position: relative;
   display: block;
   margin-left: 140px;
+  align: center;
 }
 
 .main-header-one__bottom-right {
