@@ -1446,7 +1446,18 @@
 <script  src="js/swiper-bundle.min.js"></script><!-- Swiper js -->
 <script  src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
 <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
-
+<!-- slider 1 animation -->
+<script>
+    const slides = ['one', 'two', 'three', 'four', 'five'];
+    let current = 0;
+  
+    setInterval(() => {
+      current = (current + 1) % slides.length;
+      document.getElementById(slides[current]).checked = true;
+    }, 2000); // 2 seconds
+  </script>
+  
+  
 <!-- ------------------------------
                                 Footer css link from newpages/about
                                ------------------------------  -->
