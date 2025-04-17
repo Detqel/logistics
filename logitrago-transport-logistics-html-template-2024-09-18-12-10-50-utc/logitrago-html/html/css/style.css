@@ -5892,7 +5892,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-size: 120px;
   line-height: 0.75;
   font-weight: 700;
-  color: #000;
+  color: #000000;
   text-transform: uppercase;
   opacity: 0.05;
 }
@@ -5913,7 +5913,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
   font-size: 120px;
   line-height: 0.75;
   font-weight: 700;
-  color: #000;
+  color: #0a0909;
   text-transform: uppercase;
   opacity: 0.05;
 }
@@ -6838,14 +6838,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 }
 
 .tw-any-help-section .container .tw-any-help-inner span.tw-help-title {
-  font-size: 36px;
+  font-size: 34px;
   font-weight: 700;
   color: #ff8a00;
   font-family: "Oswald", sans-serif;
 }
 
 .tw-any-help-section .container .tw-any-help-inner span.tw-help-number {
-  font-size: 32px;
+  font-size: 22px;
   font-weight: 500;
   color: #0b2f44;
 }
@@ -11336,12 +11336,9 @@ select {
 .header-slider input[type="radio"] {
   display: none;
 }
-<<<<<<< HEAD
 
 
 
 
 
 
-=======
->>>>>>> 4c4fd760d29004bd453ca9bd73f596e919f01da6
