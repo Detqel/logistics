@@ -5199,14 +5199,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 #outer-barG {
   height: 31px;
   width: 109px;
-  border: 2px solid #1e8fd0;
+  border: 2px solid #ff8800;
   overflow: hidden;
   background-color: white;
   margin: auto;
 }
 
 #outer-barG .bar-lineG {
-  background-color: #ff8800;
+  background-color: #1e8fd0 ;
   float: left;
   width: 15px;
   height: 102px;
