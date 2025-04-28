@@ -1481,6 +1481,11 @@
 <script  src="js/swiper-bundle.min.js"></script><!-- Swiper js -->
 <script  src="js/jquery.bgscroll.js"></script><!-- BACKGROUND SCROLL -->
 <script  src="js/custom.js"></script><!-- CUSTOM FUCTIONS  -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel JS (load once, either CDN or local) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
 <!-- slider 1 animation -->
 <script>
     const slides = ['one', 'two', 'three', 'four', 'five'];
@@ -1490,7 +1495,15 @@
       current = (current + 1) % slides.length;
       document.getElementById(slides[current]).checked = true;
     }, 2000); // 2 seconds
-  </script>
+    
+  </script><script>$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: true,
+    items: 1
+  });
+});</script
  
 <!-- ------------------------------
                                 Footer css link from newpages/about
