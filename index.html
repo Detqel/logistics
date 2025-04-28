@@ -43,12 +43,22 @@
     <!-- Price Range Slider -->
     <link rel="stylesheet" href="css/bootstrap-slider.min.css" />
     <div id="header-placeholder"></div>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
 
 
 </head>
 
 <body>
+
 
 <!-- LOADING AREA START ===== -->
 <div class="loading-area">
@@ -1480,6 +1490,16 @@
       current = (current + 1) % slides.length;
       document.getElementById(slides[current]).checked = true;
     }, 2000); // 2 seconds
+  </script>
+  <script>
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1
+      });
+    });
   </script>
   
   
